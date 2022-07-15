@@ -5,7 +5,7 @@ import React from 'react'
 import Navbar from '../../../components/Navbar'
 import Navbarled from '../../../components/Navbarled'
 
-function coursePage() {
+function CoursePage() {
   const router=useRouter()
   const {data:session,status}=useSession()
   const {course_name} =router.query
@@ -25,4 +25,4 @@ function coursePage() {
 
 
 
-export default coursePage
+export default CoursePage
