@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { Head } from 'next/document'
+// import { Head } from 'next/document'
 import { Router, useRouter } from 'next/router'
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
