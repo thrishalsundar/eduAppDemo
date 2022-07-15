@@ -39,7 +39,7 @@ function Register() {
         email,password:password1
     }
     console.log(data);
-    const res=await axios.post("http://localhost:6915/apis/auth/signup",data)
+    const res=await axios.post("https://eduapp-backend.herokuapp.com/apis/auth/signup",data)
     if(res.data.ok){
       alert("Successfully signed up!")
       router.push("/auth/signin")

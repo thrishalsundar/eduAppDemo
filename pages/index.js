@@ -28,7 +28,7 @@ export default function Home({courses}) {
 }
 
 export const getStaticProps=async()=>{
-  const res=await axios.get("http://localhost:6915/apis/courses/allcourses")
+  const res=await axios.get("https://eduapp-backend.herokuapp.com/apis/courses/allcourses")
   const courses=await res.data.data
   // const allCourses=String(courses)
   return {props:{courses}}

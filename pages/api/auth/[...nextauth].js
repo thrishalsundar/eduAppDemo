@@ -11,7 +11,7 @@ export default NextAuth({
                 password: {  label: "Password", type: "password" }
             },
             authorize: async(credentials)=>{
-                const res=await axios.post("http://localhost:6915/apis/auth/login",credentials)
+                const res=await axios.post("https://eduapp-backend.herokuapp.com/apis/auth/login",credentials)
                 const user=res.data.user
 
                 if(user){
