@@ -1,9 +1,12 @@
 import { signIn } from 'next-auth/react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 
 
 function Navbar() {
 
+    const router=useRouter()
     const navItems=[
         {
             name:'Login',
@@ -23,8 +26,8 @@ function Navbar() {
             <input className='flex ml-2 bg-transparent outline-none' type='text' placeholder='Search Courses'/>
             
         </div>
-        <div className='text-white '>
-            {navItems.map((item)=> <a key={item.name} href={item.href} className='mx-5 cursor-pointer'>{item.name}</a>)}
+        <div className='flex text-white'>
+            {navItems.map((item)=> <Link key={item.name} href={item.href}><p  className='mx-5 cursor-pointer'>{item.name}</p></Link>)}
         </div>
         
     </div>

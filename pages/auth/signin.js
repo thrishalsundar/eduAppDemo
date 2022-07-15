@@ -1,4 +1,4 @@
-import { Head } from 'next/document'
+// import { Head } from 'next/document'
 import React,{ useState } from 'react'
 import Navbar from '../../components/Navbar'
 import {getCsrfToken, getProviders,signIn, useSession} from "next-auth/react"
